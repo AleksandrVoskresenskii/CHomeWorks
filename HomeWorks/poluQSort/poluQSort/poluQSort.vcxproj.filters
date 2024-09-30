@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="poluQSort.cpp">
+    <ClCompile Include="poluQSort.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
