@@ -4,47 +4,6 @@
 
 
 
-//bool binSearch(int* Array, int lenArray, int number) {
-//    qSort(Array, lenArray);
-//
-//    int cutterLen = lenArray / 4 + 1;
-//    int carriage = lenArray / 2 + 1;
-//    bool isHaveInArray = false;
-//
-//    while (cutterLen > 1 && carriage >= 0 && carriage < lenArray) {
-//        if (Array[carriage] > number) {
-//            
-//        }
-//    }
-//
-//
-//}
-
-
-int binSearch(int* Array, int lenArray, int key) {
-    int left = 0;
-    int right = lenArray - 1;
-
-    while (left <= right) {
-        int middle = left + (right - left) / 2;
-
-        if (Array[middle] == key) {
-            return middle;
-        }
-
-        if (Array[middle] < key) {
-            left = middle + 1;
-        }
-        else {
-            right = middle - 1;
-        }
-    }
-
-    return -1;
-}
-
-
-
 int main(void) {
 
     int n = 100, k = 10;

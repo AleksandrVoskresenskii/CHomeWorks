@@ -61,3 +61,25 @@ void qSort(int* Array, int lenArray) {
     qSort(&Array[cutArray], lenArray - cutArray);
     return;
 }
+
+int binSearch(int* Array, int lenArray, int key) {
+    int left = 0;
+    int right = lenArray - 1;
+
+    while (left <= right) {
+        int middle = left + (right - left) / 2;
+
+        if (Array[middle] == key) {
+            return middle;
+        }
+
+        if (Array[middle] < key) {
+            left = middle + 1;
+        }
+        else {
+            right = middle - 1;
+        }
+    }
+
+    return -1;
+}
