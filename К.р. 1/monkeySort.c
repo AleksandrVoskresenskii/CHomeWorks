@@ -63,7 +63,7 @@ bool test4() {
     int Array[] = {};
     int len = 0;
     monkeySort(Array, len);
-    return isSorted(Array, len); // Пустой массив считается отсортированным
+    return isSorted(Array, len);
 }
 
 
